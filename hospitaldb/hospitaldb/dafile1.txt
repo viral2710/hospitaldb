@@ -1,0 +1,6 @@
+$001|viral|abc|Male|9087654321|viral|
+t010|male|abcdefghi|Male|1234567890|drs|
+$002|viral|abcd|Male|abc|viral1|
+t003|viral|abc|Male|0987654321|drs|
+$001|viral|abcdef|Male|12345|dct|
+$001|viral|abcdefghi|Male|1234567890|viral1|
