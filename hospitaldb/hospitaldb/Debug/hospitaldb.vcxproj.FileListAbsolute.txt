@@ -1,3 +1,4 @@
 C:\Users\viral\source\repos\hospitaldb\hospitaldb\Debug\hospitaldb.vcxprojAssemblyReference.cache
 C:\Users\viral\source\repos\hospitaldb\hospitaldb\Debug\hospitaldb.MyForm.resources
 C:\Users\viral\source\repos\hospitaldb\hospitaldb\Debug\hospitaldb.vcxproj.GenerateResource.cache
+C:\Users\viral\source\repos\hospitaldb\hospitaldb\Debug\hospitaldb.update.resources

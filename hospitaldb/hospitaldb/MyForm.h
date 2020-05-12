@@ -3,6 +3,7 @@
 #include"Header.h"
 #include <msclr/marshal.h>
 #include <msclr/marshal_cppstd.h>
+#include"update.h"
 
 namespace hospitaldb {
 
@@ -13,6 +14,7 @@ namespace hospitaldb {
 	using namespace System::Data;
 	using namespace System::Drawing;
 	using namespace std;
+	using namespace IO;
 	/// <summary>
 	/// Summary for MyForm
 	/// </summary>
@@ -555,11 +557,14 @@ private: System::Void display_Click(System::Object^ sender, System::EventArgs^ e
 	}
 }
 private: System::Void Update_Click(System::Object^ sender, System::EventArgs^ e) {
-	if ((upid->Text==""||id->Text == "" || name->Text == "" || address->Text == "" || dct->Text == "" || no->Text == "") && (!(radioButton1->Checked) || !(radioButton2->Checked) || !(radioButton3->Checked))) {
+	if ((id->Text == "" || name->Text == "" || address->Text == "" || dct->Text == "" || no->Text == "") && (!(radioButton1->Checked) || !(radioButton2->Checked) || !(radioButton3->Checked))) {
 		MessageBox::Show("Enter Value Please.", "Error");
 		return;
 	}	msclr::interop::marshal_context con;
-	m.pid = con.marshal_as<std::string>(upid->Text);
+	hospitaldb::update f;
+	f.ShowDialog();
+	StreamReader^ r = File::OpenText("project.txt");
+	m.pid = con.marshal_as< std::string >(r->ReadLine());
 	m.modify();
 	if (m.eflag == 1) {
 		error->Text = gcnew String(m.error.c_str());

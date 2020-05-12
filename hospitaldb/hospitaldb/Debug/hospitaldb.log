@@ -1,6 +1,6 @@
 ﻿  MyForm.cpp
 C:\Users\viral\source\repos\hospitaldb\hospitaldb\Header.h(166,19): warning C4244: '=': conversion from 'std::streamoff' to 'int', possible loss of data
 C:\Users\viral\source\repos\hospitaldb\hospitaldb\Header.h(201,6): warning C4101: 'pos': unreferenced local variable
-C:\Users\viral\source\repos\hospitaldb\hospitaldb\MyForm.h(655,19): warning C4129: 'I': unrecognized character escape sequence
+C:\Users\viral\source\repos\hospitaldb\hospitaldb\MyForm.h(660,19): warning C4129: 'I': unrecognized character escape sequence
   MyForm.obj : MSIL module encountered; incremental linking is disabled for MSIL; performing full link
   hospitaldb.vcxproj -> C:\Users\viral\source\repos\hospitaldb\Debug\hospitaldb.exe
